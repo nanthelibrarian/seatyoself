@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  
+  get 'pages/homepage'
+
+  resources :users, only: [:new, :create]
   resources :sessions, only: [:new, :create, :destroy]
   resources :restaurants, except: [:destroy] do 
     resources :reservations 

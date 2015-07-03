@@ -11,7 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20150703212317) do
+=======
+ActiveRecord::Schema.define(version: 20150703191131) do
+>>>>>>> 3eb915d36f735cc1c913243e8635d0f92adc12d0
 
   create_table "reservations", force: :cascade do |t|
     t.datetime "time"
@@ -44,6 +48,7 @@ ActiveRecord::Schema.define(version: 20150703212317) do
     t.string   "password_digest"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
+    t.string   "role"
   end
 
 end
