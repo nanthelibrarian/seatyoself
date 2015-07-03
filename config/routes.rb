@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   
   get 'pages/homepage'
+  get 'reservations' => 'reservations#index'
 
   resources :users, only: [:new, :create]
   resources :sessions, only: [:new, :create, :destroy]

@@ -1,2 +1,8 @@
-<h1>Restaurants#index</h1>
-<p>Find me in app/views/restaurants/index.html.erb</p>
+<h1>All Restaurants</h1>
+
+<% @restaurants.each do |restaurant| %>
+  <p><%= restaurant.name %>, <%= restaurant.email %></p>
+  <p><%= restaurant.capacity %>, <%= restaurant.description %>, <%= restaurant.category %></p>
+  <p><%= link_to "Make a Reservation", new_restaurant_reservation_path(restaurant) %></p>
+  <img src="<%= restaurant.picture %>">
+<% end %>
