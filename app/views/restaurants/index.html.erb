@@ -1,7 +1,9 @@
 <h1>All Restaurants</h1>
 
+<p><%= link_to "Home", pages_homepage_url %></p>
 <% @restaurants.each do |restaurant| %>
   <p><%= restaurant.name %>, <%= restaurant.phone_number %></p>
+  <p><%= link_to "View", restaurant %></p>
   <p><%= restaurant.capacity %>, <%= restaurant.description %>, <%= restaurant.category %></p>
   <p><%= link_to "Make a Reservation", new_restaurant_reservation_path(restaurant) %></p>
   <img src="<%= restaurant.picture %>">
