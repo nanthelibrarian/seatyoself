@@ -1,3 +1,12 @@
 <h1>Restaurants</h1>
 
-<p><% @restaurant.name %></p>
+<button><%= link_to "Back to all Restaurants", restaurants_url %></button>
+<p><%= @restaurant.name %></p>
+
+<p><%= @restaurant.phone_number %></p>
+
+<p>About: <%= @restaurant.description %></p>
+<p>Category: <%= @restaurant.category %></p>
+
+<button><p><%= link_to "Make a Reservation", new_restaurant_reservation_path(@restaurant) %></p></button>
+

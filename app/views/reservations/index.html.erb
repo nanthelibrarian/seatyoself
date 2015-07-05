@@ -1,5 +1,7 @@
 <h1>All Reservations</h1>
 
+<button><%= link_to "Home", pages_homepage_url %></button>
+
 <% @reservation.each do |reservation| %>
 <p><%= reservation.restaurant.name %>, <%= reservation.time %></p>
 <p><%= reservation.party_size %></p>
