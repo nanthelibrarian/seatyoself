@@ -1,3 +1,9 @@
 <h1>All Restaurants</h1>
 
-<p><%= @restaurant %></p>
+<p><% @restaurants.each do |r| %></p>
+  <ul>
+    <li><%= r.name %></li>
+    <li><%= r.description %></li>
+    <li><%= r.phone_number %></li>
+  </ul>
+<% end %>
