@@ -1,9 +1,8 @@
 <h1>All Restaurants</h1>
 
-<p><% @restaurants.each do |r| %></p>
-  <ul>
-    <li><%= r.name %></li>
-    <li><%= r.description %></li>
-    <li><%= r.phone_number %></li>
-  </ul>
+<% @restaurants.each do |restaurant| %>
+  <p><%= restaurant.name %>, <%= restaurant.phone_number %></p>
+  <p><%= restaurant.capacity %>, <%= restaurant.description %>, <%= restaurant.category %></p>
+  <p><%= link_to "Make a Reservation", new_restaurant_reservation_path(restaurant) %></p>
+  <img src="<%= restaurant.picture %>">
 <% end %>

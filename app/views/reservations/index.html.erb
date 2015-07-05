@@ -1,0 +1,6 @@
+<h1>All Reservations</h1>
+
+<% @reservation.each do |reservation| %>
+<p><%= reservation.restaurant.name %>, <%= reservation.time %></p>
+<p><%= reservation.party_size %></p>
+<% end %>

@@ -9,11 +9,12 @@ class UsersController < ApplicationController
       redirect_to pages_homepage_path, notice: "Signed up!"
     else
       render "new"
+    end
   end
 
   private
 
-  def users_params
+  def user_params
     params.require(:user).permit(:first_name, :last_name, :role, :email, :password, :password_confirmation)
   end
 end
