@@ -1,15 +1,9 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: MyString
-  email: MyString
+  name: McDonalds
+  phone_number: 7896054
   picture: MyString
   description: MyText
-  capacity: 1
+  capacity: 10
 
-two:
-  name: MyString
-  email: MyString
-  picture: MyString
-  description: MyText
-  capacity: 1
